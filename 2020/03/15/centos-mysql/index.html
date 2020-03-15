@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sxcgc.github.io">
-  <title>cgc 的第一篇博客 | CGC&#39;s blog</title>
+  <title>在centos下安装mysql | CGC&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hello World!从来就没有什么救世主！">
+  <meta name="description" content="换源^note：  1sudo mv &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo.bak  Yum install:  1sudo yum install mysql  set root password: 该部分详见这个链接.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cgc 的第一篇博客">
-<meta property="og:url" content="https://sxcgc.github.io/2020/03/15/article-title/index.html">
+<meta property="og:title" content="在centos下安装mysql">
+<meta property="og:url" content="https://sxcgc.github.io/2020/03/15/centos-mysql/index.html">
 <meta property="og:site_name" content="CGC&#39;s blog">
-<meta property="og:description" content="Hello World!从来就没有什么救世主！">
+<meta property="og:description" content="换源^note：  1sudo mv &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo.bak  Yum install:  1sudo yum install mysql  set root password: 该部分详见这个链接.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-15T09:41:40.000Z">
-<meta property="article:modified_time" content="2020-03-15T12:45:18.323Z">
+<meta property="article:published_time" content="2020-03-15T12:55:08.000Z">
+<meta property="article:modified_time" content="2020-03-15T13:08:49.697Z">
 <meta property="article:author" content="CGC">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="mysql">
+<meta property="article:tag" content="yum">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CGC&#39;s blog" type="application/atom+xml">
@@ -146,27 +149,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-article-title" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-centos-mysql" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      cgc 的第一篇博客
+      在centos下安装mysql
     </h1>
   
 
         
-        <a href="/2020/03/15/article-title/" class="archive-article-date">
-  	<time datetime="2020-03-15T09:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
+        <a href="/2020/03/15/centos-mysql/" class="archive-article-date">
+  	<time datetime="2020-03-15T12:55:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a><font style="Courier"><center>Hello World!</center></font></h1><h2 id="从来就没有什么救世主！"><a href="#从来就没有什么救世主！" class="headerlink" title="从来就没有什么救世主！"></a><font color=red><center>从来就没有什么救世主！</center></font></h2>
+        <ul>
+<li><p>换源<a href="如果软件清理不彻底，请先清理安装软件，centos源采用[清华源](https://mirror.tuna.tsinghua.edu.cn/help/centos/),">^note</a>：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Yum install:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install mysql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>set root password:<br> 该部分详见<a href="https://www.cnblogs.com/heyongboke/p/10534655.html" target="_blank" rel="noopener">这个链接</a>.</p>
+</li>
+</ul>
+
       
 
       
@@ -174,6 +187,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">yum</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -224,7 +256,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://sxcgc.github.io/2020/03/15/article-title/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sxcgc.github.io/2020/03/15/centos-mysql/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -238,15 +270,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/15/centos-mysql/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          在centos下安装mysql
-        
-      </div>
-    </a>
   
+    <a href="/2020/03/15/article-title/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">cgc 的第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
